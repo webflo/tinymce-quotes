@@ -2,7 +2,7 @@
 
 	Quotes Plugin - by Jürgen Höfs - www.dream-a-bit.de
 
-	Adds two buttons for creating German (&raquo; / &laquo;) and France (&bdquo; / &rdquo) quotes;	
+	Adds two buttons for creating German (&raquo; / &laquo;) and France (&bdquo; / &rdquo) quotes;
 
 */
 
@@ -14,8 +14,8 @@
 		init : function(editor, url) {
 
 			/* France quotes */
-	
-			
+
+
 			editor.addCommand("mceFranceQuotes", function() {
 				var sel = editor.selection;
 				var node = sel.getNode();
@@ -26,7 +26,7 @@
 						sel.setContent("&raquo;" + content + "&laquo; ");
 					} else {
 						sel.setContent('&raquo;<span id="remove_me"></span>&laquo;');
-						sel.select(sel.dom.select('span#remove_me')[0]); 
+						sel.select(sel.dom.select('span#remove_me')[0]);
 						sel.dom.remove(sel.dom.select('span#remove_me')[0]);
 					}
 					editor.nodeChanged();
@@ -37,12 +37,12 @@
 				title: "France Quotes",
 				image: url + "/francequotes.gif",
 				cmd: "mceFranceQuotes"
-				
+
 			});
-			
-			
+
+
 			/* German Quotes */
-			
+
 			editor.addCommand("mceGermanQuotes", function() {
 				var sel = editor.selection;
 				var node = sel.getNode();
@@ -53,7 +53,7 @@
 						sel.setContent("&bdquo;" + content + "&ldquo; ");
 					} else {
 						sel.setContent('&bdquo;<span id="remove_me"></span>&ldquo;');
-						sel.select(sel.dom.select('span#remove_me')[0]); 
+						sel.select(sel.dom.select('span#remove_me')[0]);
 						sel.dom.remove(sel.dom.select('span#remove_me')[0]);
 					}
 					editor.nodeChanged();
@@ -64,10 +64,10 @@
 				title: "German Quotes",
 				image: url + "/germanquotes.gif",
 				cmd: "mceGermanQuotes"
-				
-			});			
-			
-			
+
+			});
+
+
 		}
 	});
 

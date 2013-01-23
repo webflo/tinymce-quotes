@@ -1,6 +1,6 @@
 /*
 
-	Quotes Plugin - by Jürgen Höfs - www.dream-a-bit.de
+	Quotes Plugin - by JÃ¼rgen HÃ¶fs - www.dream-a-bit.de
 
 	Adds two buttons for creating German (&raquo; / &laquo;) and France (&bdquo; / &rdquo) quotes;	
 
